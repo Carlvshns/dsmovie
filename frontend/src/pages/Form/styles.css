@@ -55,3 +55,28 @@
     align-items: center;
     justify-content: center;
 }
+div {
+    display: block;
+}
+.Mcard{
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .Mcard{
+        width: 200px;
+        height: 220px;
+        margin-bottom: 95px;
+    }
+        
+}
+
+@media (min-width: 767px) {
+    .Mcard{
+        width: 271px;
+        height: 290px;
+        margin-bottom: 73px;
+    }
+        
+}
