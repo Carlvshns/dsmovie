@@ -13,7 +13,7 @@ type StarProps = {
 
 function getFills(score: number) {
 
-    const fills = [0,0,0,0];
+    const fills = [0,0,0,0,0];
 
     const integerPart = Math.floor(score);
 
