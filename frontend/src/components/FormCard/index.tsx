@@ -13,7 +13,6 @@ type Props = {
 
 function FormCard( { movieId } : Props ){
 
-    const navigate = useNavigate();
 
     const[movie, setMovie] = useState<Movie>();
 
@@ -45,7 +44,7 @@ function FormCard( { movieId } : Props ){
         }
 
         axios(config).then(response => {
-            navigate("/");
+            window.location.replace("/");
         });
     }
 
