@@ -1,4 +1,4 @@
-package com.devsuperior.dsmovie.controllers;
+package com.devsuperior.dsmovie.endpoint;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PutMapping;

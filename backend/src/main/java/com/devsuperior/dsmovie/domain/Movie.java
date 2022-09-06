@@ -1,4 +1,4 @@
-package com.devsuperior.dsmovie.entities;
+package com.devsuperior.dsmovie.domain;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -10,12 +10,15 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "tb_movie")
 public class Movie {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@ApiModelProperty(notes = "MOvie ID", example = "1", required = true)
 	private Long id;
 	private String title;
 	private Double score;
