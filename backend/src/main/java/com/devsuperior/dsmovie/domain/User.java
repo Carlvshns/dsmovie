@@ -6,13 +6,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "tb_user")
 public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@ApiModelProperty(notes = "User ID", example = "1", required = true)
 	private Long id;
+	@ApiModelProperty(notes = "User email", example = "maria@gmail.com", required = true)
 	private String email;
 	
 	public User() {
