@@ -6,15 +6,15 @@ import io.swagger.annotations.ApiModelProperty;
 
 public class MovieDTO {
 
-	@ApiModelProperty(notes = "Movie ID for MovieDTO Object", example = "1", required = true)
+	@ApiModelProperty(notes = "Movie ID for MovieDTO Object ID", example = "1", required = true)
 	private Long id;
-	@ApiModelProperty(notes = "Movie Title for MovieDTO Object", example = "The Witcher", required = true)
+	@ApiModelProperty(notes = "Movie Title for MovieDTO Object Title", example = "The Witcher", required = true)
 	private String title;
-	@ApiModelProperty(notes = "Movie Score for MovieDTO Object", example = "4.5", required = true)
+	@ApiModelProperty(notes = "Movie Score for MovieDTO Object Score", example = "4.5", required = true)
 	private Double score;
-	@ApiModelProperty(notes = "Movie Count for MovieDTO Object", example = "2", required = true)
+	@ApiModelProperty(notes = "Movie Count for MovieDTO Object Count", example = "2", required = true)
 	private Integer count;
-	@ApiModelProperty(notes = "Movie image URL for MovieDTO Object", example = "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg", required = true)
+	@ApiModelProperty(notes = "Movie image URL for MovieDTO Object Image", example = "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg", required = true)
 	private String image;
 	
 	public MovieDTO() {
