@@ -14,7 +14,7 @@ public class ScoreDTO {
 	public ScoreDTO() {
 	}
 
-	public Long getMovieId() {
+    public Long getMovieId() {
 		return movieId;
 	}
 
