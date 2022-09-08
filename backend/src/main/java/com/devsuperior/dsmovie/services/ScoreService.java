@@ -42,7 +42,7 @@ public class ScoreService {
 		score.setUser(user);
 		score.setValue(dto.getScore());
 		
-		score = scoreRepository.saveAndFlush(score);
+		scoreRepository.saveAndFlush(score);
 		
 		double sum = 0.0;
 		for (Score s : movie.getScores()) {

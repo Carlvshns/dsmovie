@@ -10,7 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import io.swagger.annotations.ApiModelProperty;
 
@@ -25,7 +24,6 @@ public class Movie {
 	@ApiModelProperty(notes = "Movie Title", example = "The Witcher", required = true)
 	@NotNull(message = "The field 'title' is mandatory")
 	private String title;
-	@Size(min=1, max=5, message="The field 'Score' just acept number between 1 and 5")
 	@ApiModelProperty(notes = "Movie Score", example = "4.5", required = true)
 	@NotNull(message = "The field 'score' is mandatory")
 	private Double score;
